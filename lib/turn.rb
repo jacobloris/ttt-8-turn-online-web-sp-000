@@ -15,3 +15,14 @@ def position_taken?(board, index)
   end
 end
 
+def valid_move?(board, index)
+ if (board[index] == " ")
+   true 
+   elsif(board[index] == "")
+   true
+   elsif(board[index] == nil)
+   false
+   elsif(board[index] == ["X" || "O"])
+   false
+    end 
+ end
